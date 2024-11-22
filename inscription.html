@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <section class="connexion py-5">
+        <div class="container">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="./images/signup.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bold mb-3">Créer un compte</h2>
+                            <form id="InscriptionSubmit" class="row mb-3">
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="nom" placeholder="name@example.com" >
+                                        <label for="floatingInput">Votre nom</label>
+                                      </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="prenom" placeholder="name@example.com" >
+                                        <label for="floatingInput">Prénom</label>
+                                      </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com" >
+                                        <label for="floatingInput">Email address</label>
+                                      </div>
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <div class="input-group form-floating mb-3">
+                                        <input type="text" class="form-control" id="password" placeholder="Mot de passe">
+                                        <span class="input-group-text bg-transparent border-l-0">
+                                            <a href="#a" id="viewPassword" class="text-decoration-none text-secondary"><i class="fa fa-eye"></i></a>
+                                        </span>
+                                        <label for="password">Mot de passe</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="bg-danger rounded-2 p-2 text-white fw-bold" style="display: none;" id="message"></p>
+                                    <button type="submit" id="btnSubmit" class="btn btn-primary">Créer un compte</button>
+                                </div>
+                            </form>
+                            <p>J'ai déjà un compte <a href="/index.html" class="text-decoration-none">Se connecter</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button trigger modal -->
+<button type="button" id="btnModal" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container text-center d-flex justify-content-center align-items-center">
+                <div>
+                    <img src="./images/success.gif" class="img-fluid" width="50%" alt="">
+                    <h2 class="h3 mb-3 text-success">Inscription réussi 🎉</h2>
+                    <a href="/index.html" class="btn btn-success">Se connecter</a>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

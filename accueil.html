@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+   
+    <link href="./vendors/fontawesome/css/all.css" rel="stylesheet">
+    <link href="./vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+    <main class="container-fluid">
+        <div class="row">
+            <!--Navbar-->
+            <div class="col-lg-1 border-0 rounded-0 card taille" id="navbar"></div>
+            <!--Messages reçus-->
+            <div class="col-lg-3 py-5 py-lg-0 border-0 rounded-0 card taille bg-gris" id="message-reçu"></div>
+
+            <!--Espace de discution-->
+            <div class="col-lg-8 position-relative border-0 rounded-0 bg-white taille">
+                <!--Message de bienvenu-->
+                <div class=" w-100 h-100 d-none d-lg-block">
+                    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                        <div id="info" class="text-center">
+                            <h1 class="text-primary fw-bold h3">Bienvenue!</h1>
+                            <h2>Selectionnez un ami pour discuter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
